@@ -1,4 +1,5 @@
 #include <iostream>
+
 int add(int a, int b)
 {
     return a + b;
@@ -6,7 +7,9 @@ int add(int a, int b)
 
 int main()
 {
-    std::cout << "Hello, World!" << std::endl;
-    std::cout << "Addition of 3 and 4 is: " << add(3, 4) << std::endl;
+    int num1, num2;
+    std::cout << "Enter two numbers: ";
+    std::cin >> num1 >> num2;
+    std::cout << "Addition of " << num1 << " and " << num2 << " is: " << add(num1, num2) << std::endl;
     return 0;
 }
